@@ -6,9 +6,6 @@ import TaskForm from "./TaskForm";
 const API_URL = process.env.REACT_APP_API_URL;
 
 const NewTask = (props) => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-
   const enterTaskHandler = async (taskText) => {
     setIsLoading(true);
     setError(null);
